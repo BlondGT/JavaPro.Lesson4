@@ -3,7 +3,7 @@ package ua.ithillel.lesson4;
 
 public class ArrayValueCalculator {
 
-    public static void main(String[] args) {
+    public void main(String[] args) {
 
         try {
             int sum = doCalc(new String[][]{
@@ -16,9 +16,9 @@ public class ArrayValueCalculator {
         }
     }
 
-    static int doCalc(String[][] input) throws ArrayDataException, ArraySizeException {
+    public int doCalc(String[][] input) throws ArrayDataException, ArraySizeException {
 
-       int sum = 0;
+        int sum = 0;
         for (String[] strings : input) {
             for (String string : strings) {
                 if (input.length != 4 || strings.length != 4) throw new ArraySizeException("Make size 4x4!!!");
