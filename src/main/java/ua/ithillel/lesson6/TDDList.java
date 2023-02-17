@@ -109,7 +109,7 @@ public class TDDList {
             this.name = name;
             this.occurrence = occurrence;
         }
-        
+
 
         @Override
         public boolean equals(Object o) {
